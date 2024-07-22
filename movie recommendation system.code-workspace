@@ -1,3 +1,46 @@
-{
-	"folders": []
-}
+# **MOVIE RECOMMENDATION**
+-------------
+## **Objective**
+The project aims  to build a recommendation engine that suggests movies to users based on their preferences and watching history. it will use the Movielens dataset and implement item-based collaborative filtering. these systems analyze data such as users' ratings, reviews, and viewing histories to generate personalized recommendation.
+## **Data Source**
+The project utilizes the MovieLens dataset, a widely used dataset in the field of recommender systems, containing movie ratings and metadata. The dataset is preprocessed to create a user-item matrix and to calculate item similarity using cosine similarity.
+## **Import Library**
+pip install pandas scikit-learn
+To install the packages following code is used
+
+import numpy as np
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.feature_extraction.text import CountVectorizer
+    from sklearn.metrics.pairwise import linear_kernel
+    from sklearn.metrics.pairwise import cosine_similarity
+    from ast import literal_eval
+## **Import Data**
+https://www.kaggle.com/netflix-inc/netflix-prize-data/data
+## **Describe Data**
+The Movie Recommendation System is intended for individuals who seek personalized movie suggestions to enhance their movie-watching experience. It can be integrated into various platforms such as streaming services, movie review websites, or personal movie catalog applications.
+## **Data Visualization**
+The Movie Recommendation System is a machine learning-based application that provides personalized movie recommendations to users. It utilizes collaborative filtering techniques to analyze user preferences and similarities among movies to generate accurate and relevant recommendations.
+## **Data Preprocessing**
+Data preprocessing is a crucial step for any data analysis problem. The model's accuracy depends mostly on the quality of the data. In general, any data preprocessing step involves data cleansing, transformations, identifying missing values, and how they should be treated.
+## **Define Target Variable (y) and Feature Variables (X)**
+The target variable, also known as the response variable, dependent variable, or predictand, is the variable that you are trying to predict or understand. It is the outcome or result that you are interested in, and it is what you want to learn more about.
+
+For example, if you are trying to predict whether a customer will churn or not, the target variable would be “churned” or “not churned”.
+
+Feature variables, also known as independent variables, predictors, or input variables, are the variables that are used to predict or explain the target variable. They are the inputs that you use to make predictions about the output.
+
+For example, in the customer churn example, some of the feature variables could be the customer’s age, gender, income, and tenure with the company. In the house price example, some of the feature variables could be the square footage of the house, the number of bedrooms and bathrooms, and the location of the house.
+## **Train Test Split**
+The recommendation ratings data is split into Train and Test datasets. The Train data is used to fit your model. The Test data is used to make predictions with your trained model and evaluate model performance. It's common to have an 80/20 split with Train and Test data.
+The optimal split ratio depends on various factors. The rough standard for train-validation-test splits is 60-80% training data, 10-20% validation data, and 10-20% test data.
+## **Modeling**
+Model-based recommendation systems involve building a model based on the dataset of ratings. In other words, we extract some information from the dataset, and use that as a "model" to make recommendations without having to use the complete dataset every time
+## **Model Evaluation**
+There are two main ways to evaluate a recommender system's performance: Root Mean Squared Error (RMSE) and Mean Absolute Percentage Error (MAPE). RMSE measures the squared loss, while MAPE measures the absolute loss.
+## **Prediction**
+
+A movie recommendation system is a fancy way to describe a process that tries to predict your preferred items based on your or people similar to you. In layman's terms, we can say that a Recommendation System is a tool designed to predict/filter the items as per the user's behavior.
+## **Explaination**
+These systems use techniques such as collaborative filtering, content-based filtering, and hybrid methods to analyze user data and generate accurate and relevant recommendations. Integrated into platforms such as Netflix, Amazon Prime Video, and Hulu, these systems are essential to modern media streaming platforms.
